@@ -10,8 +10,8 @@ var request = require("request");
 var fs = require("fs");
 
 var spotify = new Spotify({
-    id: "",
-    secret: ""
+    id: "e180dae205fd4d3690fa14b6e6d3e8ed",
+    secret: "639f205d7b614f7cb9ef79958ce56815"
 });
 
 var getArtistNames = function(artist) {
@@ -52,7 +52,7 @@ var getMyTweets = function() {
     var client = new Twitter(keys);
 
     var params = {
-        screen_name: "cnn"
+        screen_name: "code__girl"
     };
     client.get("statuses/user_timeline", params, function(error, tweets, response) {
         if (!error) {
